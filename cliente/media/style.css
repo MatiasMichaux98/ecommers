@@ -1,0 +1,250 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(13, 12, 8);
+    margin: 0;
+}
+
+
+/*MENU*/
+
+.banner {
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.4),
+   rgba(0,0,0,0.4)),url(/cliente/media/img/aaa.jpg);    
+}
+
+.banner-container{
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1{
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 62px;
+    font-weight: bold;
+}
+.banner p{
+    font-size: 38px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.barras{
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.barras a {
+    display: inline-block;
+    color: #fffefe;
+    padding: 35px 15px;
+    text-decoration: none;
+   
+}
+
+.barras .imagen img{
+    height: 50px;
+    float:left; 
+    margin-right: 50px; 
+    margin-left: 40px;
+    margin-top: 18px;
+}
+
+.footer{
+    clear:both;
+    background-color: rgb(33, 33, 33);
+    color: rgb(243, 157, 8);
+    padding: 2px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*Estilos de los productos carrito*/
+
+
+.container img{
+    height: 300px;
+    width: 100% ;
+}
+
+.card-product{
+    width: 100% auto; 
+    padding: 0px 10px 30px 10px;
+    background-color: rgb(21, 21, 21);
+    border-radius: 15px;
+    margin: 30px 30px 30px 30px; 
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card-product > div {
+    padding: 0px 0px 20px 10px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 30px 10px 10px 10px  ;
+}
+
+.card-product img{
+    margin-top: 40px;
+    margin-left: 5px;
+    border-radius: 10px 10px 0px 0px;
+    width: 200px;
+    height: 200px;
+  
+}
+
+.product h3, .product p {
+    margin: -4px 4px 0px 8.5px;
+    padding: 0px 0px 15px 0px;
+}
+
+.card-product button{
+    border: none;
+    outline: none;
+    padding: 10px 84px;
+    color: black;
+    background-color: #feab2e ;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+/*Boton del carrito*/
+
+.btn .material-icons{
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+/* modal del carrito */
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*para el top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0009;
+    color: #fff;
+    width: 100%;
+}
+.modal-header-tittle{
+    justify-self: start;
+}
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img{
+    height: 120px;
+    width: 129px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+/*boton de redes sociales */
+
+.btn-redes a{
+    position: absolute;
+    cursor: pointer; 
+    font-size: 18px
+}
+.btn-redes a:nth-child(1) {
+    top: 0;
+    right: 105px;
+}
+
+.btn-redes a:nth-child(2) {
+    top: 0%;
+    right: 145px; 
+}
+
+.btn-redes a:nth-child(3) {
+    top: 0%;
+    right: 190px; 
+}
+
+/*boton whatssap*/
+.float{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:40px;
+	right:40px;
+	background-color:#1ef86e;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+     font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:12px;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+   
+
+}
+
